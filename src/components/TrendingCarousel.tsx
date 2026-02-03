@@ -34,7 +34,7 @@ export default function TrendingCarousel() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.05 }}
-                            className="group min-w-[80vw] md:min-w-0 snap-center bg-white rounded-[10px] shadow-[0_2px_14px_rgba(0,0,0,0.07)] hover:shadow-[0_6px_28px_rgba(0,0,0,0.13)] border border-transparent hover:border-[rgba(201,169,110,0.4)] active:border-[rgba(201,169,110,0.5)] transition-all duration-[350ms] ease-out flex flex-col hover:-translate-y-[3px] active:scale-[0.98]"
+                            className="group min-w-[80vw] md:min-w-0 snap-center bg-white rounded-[10px] shadow-[0_2px_14px_rgba(0,0,0,0.07)] hover:shadow-[0_6px_28px_rgba(0,0,0,0.13)] border border-transparent hover:border-[rgba(201,169,110,0.4)] active:border-[rgba(201,169,110,0.5)] transition-all duration-[350ms] ease-out flex flex-col hover:-translate-y-[3px] active:-translate-y-[2px] active:shadow-[0_6px_28px_rgba(0,0,0,0.13)]"
                         >
                             {/* Image Area with 12px Padding (p-3) */}
                             <div className="p-3">
@@ -50,8 +50,8 @@ export default function TrendingCarousel() {
                                 </div>
                             </div>
 
-                            {/* Floating Gold Divider with 24px margins (mx-6) */}
-                            <div className="mx-6 h-[1px] bg-[rgba(201,169,110,0.6)] mt-2 mb-3" />
+                            {/* Floating Gold Divider with 16px margins (mx-4) */}
+                            <div className="mx-4 h-[1px] bg-[rgba(201,169,110,0.6)] mt-2 mb-3" />
 
                             {/* Content Area */}
                             <div className="px-5 pb-8 pt-2 text-center flex flex-col gap-5 flex-grow">

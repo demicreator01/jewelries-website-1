@@ -3,11 +3,14 @@ import { motion } from 'framer-motion';
 export default function Hero() {
     return (
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-            {/* Background Image with Ken Burns Effect */}
-            <div className="absolute inset-0 z-0">
+            {/* Background with Warm Gradient + Ken Burns Image */}
+            <div
+                className="absolute inset-0 z-0"
+                style={{ background: 'linear-gradient(180deg, #2a1e0e 0%, #4a3520 30%, #6b5a3a 50%, #3d2e1a 75%, #1a1208 100%)' }}
+            >
                 <motion.div
                     animate={{
-                        scale: [1, 1.1],
+                        scale: [1, 1.2],
                     }}
                     transition={{
                         duration: 20,
@@ -20,8 +23,9 @@ export default function Hero() {
                     <img
                         src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&q=80"
                         alt="Gold jewellery"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover opacity-0 transition-opacity duration-[600ms] ease-out"
                         loading="eager"
+                        onLoad={(e) => e.currentTarget.classList.remove('opacity-0')}
                     />
                 </motion.div>
                 {/* Semi-transparent dark overlay */}
