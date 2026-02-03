@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import ImageModal from './ImageModal';
 
 const categories = [
     { name: 'Rings', image: '/images/category_rings.png' },
@@ -10,6 +12,8 @@ const categories = [
 ];
 
 export default function CategoryGrid() {
+    const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
     return (
         <section id="categories" className="py-20 md:py-32 bg-lum-bg">
             <div className="max-w-[1100px] mx-auto px-6">
@@ -33,6 +37,7 @@ export default function CategoryGrid() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             className="group cursor-pointer relative"
+                            onClick={() => setSelectedImage({ src: cat.image, alt: cat.name })}
                         >
                             <div className="relative aspect-[4/3] overflow-hidden rounded-[12px] md:rounded-[14px] shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-[350ms] ease-out active:scale-[0.97]">
                                 {/* Image Layer */}
@@ -55,6 +60,13 @@ export default function CategoryGrid() {
                     ))}
                 </div>
             </div>
+
+            <ImageModal
+                isOpen={!!selectedImage}
+                onClose={() => setSelectedImage(null)}
+                imageSrc={selectedImage?.src || ''}
+                altText={selectedImage?.alt || ''}
+            />
         </section>
     );
 }

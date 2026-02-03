@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import ImageModal from './ImageModal';
 
 const products = [
     { name: 'Pavé Diamond Band', image: '/images/pave_diamond_band.png' },
@@ -12,6 +14,8 @@ const products = [
 ];
 
 export default function TrendingCarousel() {
+    const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
     return (
         <section id="trending" className="py-20 md:py-32 bg-white overflow-hidden">
             <div className="max-w-[1100px] mx-auto px-6">
@@ -38,13 +42,16 @@ export default function TrendingCarousel() {
                         >
                             {/* Image Area with 12px Padding (p-3) */}
                             <div className="p-3">
-                                <div className="relative aspect-square overflow-hidden rounded-[8px] bg-gray-50/50">
+                                <div
+                                    className="relative aspect-square overflow-hidden rounded-[8px] bg-gray-50/50 cursor-zoom-in"
+                                    onClick={() => setSelectedImage({ src: product.image, alt: product.name })}
+                                >
                                     <div className="absolute inset-0 bg-gray-100 animate-pulse" />
                                     <img
                                         src={product.image}
                                         alt={product.name}
                                         loading="lazy"
-                                        className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[350ms] ease-in-out"
+                                        className="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-[500ms] ease-in-out hover:scale-105"
                                         onLoad={(e) => e.currentTarget.classList.remove('opacity-0')}
                                     />
                                 </div>
@@ -70,6 +77,13 @@ export default function TrendingCarousel() {
                     ))}
                 </div>
             </div>
+
+            <ImageModal
+                isOpen={!!selectedImage}
+                onClose={() => setSelectedImage(null)}
+                imageSrc={selectedImage?.src || ''}
+                altText={selectedImage?.alt || ''}
+            />
         </section>
     )
 }
