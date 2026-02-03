@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 
 const products = [
-    { name: 'Pavé Diamond Band', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80' },
-    { name: 'Gold Layered Chain', image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80' },
-    { name: 'Sapphire Drop Earrings', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80' },
+    { name: 'Pavé Diamond Band', image: '/images/pave_diamond_band.png' },
+    { name: 'Gold Layered Chain', image: '/images/gold_layered_chain.png' },
+    { name: 'Sapphire Drop Earrings', image: '/images/sapphire_drop_earrings.png' },
     { name: 'Rose Gold Cuff', image: '/images/rose_gold_cuff.png' },
     { name: 'Emerald Pendant', image: '/images/emerald_pendant.png' },
     { name: 'Platinum Hoop Earrings', image: '/images/platinum_hoop_earrings.png' },
-    { name: 'Diamond Tennis Bracelet', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80' },
-    { name: 'Moonstone Ring', image: 'https://images.unsplash.com/photo-1603912663489-0f488219bdba?w=600&q=80' },
+    { name: 'Diamond Tennis Bracelet', image: '/images/diamond_tennis_bracelet.png' },
+    { name: 'Moonstone Ring', image: '/images/moonstone_ring.png' },
 ];
 
 export default function TrendingCarousel() {

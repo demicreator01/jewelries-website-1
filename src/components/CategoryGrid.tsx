@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 
 const categories = [
-    { name: 'Rings', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80' },
-    { name: 'Necklaces', image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80' },
-    { name: 'Bracelets', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80' },
-    { name: 'Earrings', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80' },
+    { name: 'Rings', image: '/images/category_rings.png' },
+    { name: 'Necklaces', image: '/images/gold_layered_chain.png' },
+    { name: 'Bracelets', image: '/images/diamond_tennis_bracelet.png' },
+    { name: 'Earrings', image: '/images/category_earrings.png' },
     { name: 'Watches', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80' },
     { name: 'Accessories', image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80' },
 ];
