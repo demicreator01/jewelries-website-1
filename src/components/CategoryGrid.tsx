@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const categories = [
     { name: 'Rings', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80' },
-    { name: 'Necklaces', image: 'https://images.unsplash.com/photo-1599643478518-17488fbbcd75?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Necklaces', image: 'https://images.unsplash.com/photo-1531995811006-35cb42e1a022?auto=format&fit=crop&w=800&q=80' },
     { name: 'Bracelets', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80' },
     { name: 'Earrings', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80' },
     { name: 'Watches', image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80' },
@@ -47,7 +47,7 @@ export default function CategoryGrid() {
                                     />
                                 </div>
                                 <div className="mt-4 text-center">
-                                    <h3 className="font-heading text-xl text-lum-text group-hover:text-lum-gold transition-colors font-light">{cat.name}</h3>
+                                    <h3 className="font-heading text-xl text-lum-text group-hover:text-lum-gold transition-colors font-semibold">{cat.name}</h3>
                                 </div>
                             </div>
                         </motion.div>

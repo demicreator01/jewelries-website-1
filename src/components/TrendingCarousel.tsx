@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 
 const products = [
-    { name: 'Pavé Diamond Band', image: 'https://images.unsplash.com/photo-1629224316810-9d8805b95076?auto=format&fit=crop&w=600&h=600&q=80' },
+    { name: 'Pavé Diamond Band', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&h=600&q=80' },
     { name: 'Gold Layered Chain', image: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=600&h=600&q=80' },
     { name: 'Sapphire Drop Earrings', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&h=600&q=80' },
-    { name: 'Rose Gold Cuff', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=600&h=600&q=80' },
-    { name: 'Emerald Pendant', image: 'https://images.unsplash.com/photo-1602751584552-8ba731f6e169?auto=format&fit=crop&w=600&h=600&q=80' },
-    { name: 'Platinum Hoop Earrings', image: 'https://images.unsplash.com/photo-1630019852942-e5e1237d6d1b?auto=format&fit=crop&w=600&h=600&q=80' },
+    { name: 'Rose Gold Cuff', image: '/images/rose_gold_cuff.png' },
+    { name: 'Emerald Pendant', image: '/images/emerald_pendant.png' },
+    { name: 'Platinum Hoop Earrings', image: '/images/platinum_hoop_earrings.png' },
     { name: 'Diamond Tennis Bracelet', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=600&h=600&q=80' },
     { name: 'Moonstone Ring', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&h=600&q=80' },
 ];
@@ -47,7 +47,7 @@ export default function TrendingCarousel() {
                                 />
                             </div>
                             <div className="text-center mt-auto">
-                                <h3 className="font-heading text-lg text-lum-text mb-4 font-light">{product.name}</h3>
+                                <h3 className="font-heading text-lg text-lum-text mb-1 font-medium">{product.name}</h3>
                                 <a href="#contact" className="inline-block px-6 py-2 border border-lum-gold text-lum-gold font-heading text-xs tracking-widest uppercase rounded-full hover:bg-lum-gold hover:text-white transition-colors">
                                     Enquire
                                 </a>
