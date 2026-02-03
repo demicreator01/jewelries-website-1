@@ -71,3 +71,21 @@ export default defineConfig([
   },
 ])
 ```
+
+
+{ name: 'Rings', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Necklaces', image: 'https://images.unsplash.com/photo-1531995811006-35cb42e1a022?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Bracelets', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Earrings', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Watches', image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80' },
+    { name: 'Accessories', image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80' },
+
+
+ {name: 'Pavé Diamond Band', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&h=600&q=80' },
+    { name: 'Gold Layered Chain', image: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=600&h=600&q=80' },
+    { name: 'Sapphire Drop Earrings', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&h=600&q=80' },
+    { name: 'Rose Gold Cuff', image: '/images/rose_gold_cuff.png' },
+    { name: 'Emerald Pendant', image: '/images/emerald_pendant.png' },
+    { name: 'Platinum Hoop Earrings', image: '/images/platinum_hoop_earrings.png' },
+    { name: 'Diamond Tennis Bracelet', image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=600&h=600&q=80' },
+    { name: 'Moonstone Ring', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&h=600&q=80' },

@@ -31,7 +31,13 @@ export default function Navbar() {
         >
             <div className="max-w-[1100px] mx-auto flex items-center justify-between">
                 {/* Logo */}
-                <a href="#" className="font-heading text-2xl md:text-3xl tracking-[0.2em] font-light text-lum-text uppercase z-50 relative">
+                <a
+                    href="#"
+                    className={cn(
+                        "font-heading text-2xl md:text-3xl tracking-[0.2em] font-light uppercase z-50 relative transition-colors duration-300",
+                        scrolled ? "text-lum-text" : "text-white"
+                    )}
+                >
                     Lumière
                 </a>
 
@@ -41,7 +47,10 @@ export default function Navbar() {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="font-sans text-sm tracking-widest text-lum-text hover:text-lum-gold transition-colors uppercase"
+                            className={cn(
+                                "font-sans text-sm tracking-widest transition-colors duration-300 uppercase",
+                                scrolled ? "text-lum-text hover:text-lum-gold" : "text-white/90 hover:text-white"
+                            )}
                         >
                             {link.name}
                         </a>
@@ -50,7 +59,10 @@ export default function Navbar() {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden z-50 relative text-lum-text"
+                    className={cn(
+                        "md:hidden z-50 relative transition-colors duration-300",
+                        scrolled ? "text-lum-text" : "text-white"
+                    )}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
