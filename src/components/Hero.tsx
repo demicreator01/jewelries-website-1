@@ -22,7 +22,9 @@ export default function Hero() {
                 >
                     <img
                         src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&q=80"
-                        alt="Gold jewellery"
+                        alt="Luxury jewellery aesthetic background"
+                        width="1600"
+                        height="900"
                         className="w-full h-full object-cover opacity-0 transition-opacity duration-[600ms] ease-out"
                         loading="eager"
                         onLoad={(e) => e.currentTarget.classList.remove('opacity-0')}

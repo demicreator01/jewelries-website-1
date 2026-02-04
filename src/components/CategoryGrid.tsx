@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import ImageModal from './ImageModal';
 
 const categories = [
-    { name: 'Rings', image: '/images/category_rings.png' },
-    { name: 'Necklaces', image: '/images/gold_layered_chain.png' },
-    { name: 'Bracelets', image: '/images/diamond_tennis_bracelet.png' },
-    { name: 'Earrings', image: '/images/category_earrings.png' },
-    { name: 'Watches', image: '/images/category_watches.jpg' },
-    { name: 'Accessories', image: '/images/category_accesories.webp' },
+    { name: 'Rings', image: '/images/category_rings.png', alt: 'Diamond and gold rings collection' },
+    { name: 'Necklaces', image: '/images/gold_layered_chain.png', alt: 'Gold layered chain necklaces' },
+    { name: 'Bracelets', image: '/images/diamond_tennis_bracelet.png', alt: 'Diamond tennis bracelet' },
+    { name: 'Earrings', image: '/images/category_earrings.png', alt: 'Elegant gold and diamond earrings' },
+    { name: 'Watches', image: '/images/category_watches.jpg', alt: 'Rolex Day-Date luxury watch on cream background' },
+    { name: 'Accessories', image: '/images/category_accesories.webp', alt: 'Beige luxury handbag on studio surface' },
 ];
 
 export default function CategoryGrid() {
@@ -37,14 +37,16 @@ export default function CategoryGrid() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             className="group cursor-pointer relative"
-                            onClick={() => setSelectedImage({ src: cat.image, alt: cat.name })}
+                            onClick={() => setSelectedImage({ src: cat.image, alt: cat.alt })}
                         >
                             <div className="relative aspect-[4/3] overflow-hidden rounded-[12px] md:rounded-[14px] shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-[350ms] ease-out active:scale-[0.97]">
                                 {/* Image Layer */}
                                 <div className="absolute inset-0 bg-gray-200 animate-pulse" /> {/* Skeleton */}
                                 <img
                                     src={cat.image}
-                                    alt={cat.name}
+                                    alt={cat.alt}
+                                    width="600"
+                                    height="450"
                                     loading="lazy"
                                     decoding="async"
                                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-[400ms] ease-out group-hover:scale-[1.05] opacity-0"

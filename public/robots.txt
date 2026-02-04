@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iq2gold.co.uk/sitemap.xml
