@@ -20,15 +20,26 @@ export default function Hero() {
                     }}
                     className="absolute inset-0 w-full h-full"
                 >
-                    <img
-                        src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&q=80"
-                        alt="Luxury jewellery aesthetic background"
-                        width="1600"
-                        height="900"
-                        className="w-full h-full object-cover opacity-0 transition-opacity duration-[600ms] ease-out"
-                        loading="eager"
-                        onLoad={(e) => e.currentTarget.classList.remove('opacity-0')}
-                    />
+                    <picture>
+                        <source
+                            media="(max-width: 768px)"
+                            srcSet="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80"
+                        />
+                        <source
+                            media="(min-width: 769px)"
+                            srcSet="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&q=80"
+                        />
+                        <img
+                            src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1600&q=80"
+                            alt="Luxury jewellery aesthetic background"
+                            width="1600"
+                            height="900"
+                            className="w-full h-full object-cover opacity-0 transition-opacity duration-[600ms] ease-out"
+                            loading="eager"
+                            fetchPriority="high"
+                            onLoad={(e) => e.currentTarget.classList.remove('opacity-0')}
+                        />
+                    </picture>
                 </motion.div>
                 {/* Semi-transparent dark overlay */}
                 <div className="absolute inset-0 bg-black/35 z-10" />
