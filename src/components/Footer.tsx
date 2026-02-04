@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="max-w-[1100px] mx-auto px-6 text-center md:text-left">
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-12">
                     <div className="space-y-6 max-w-sm text-center md:text-left">
-                        <span className="font-heading text-3xl font-light text-lum-text uppercase tracking-[0.2em]">Lumière</span>
+                        <span className="font-heading text-3xl font-light text-lum-text uppercase tracking-[0.2em]">IQ2 GOLD LTD</span>
                         <p className="font-body text-sm text-lum-muted leading-relaxed">
                             Exceptional jewellery for extraordinary moments. Crafted with passion, worn with love.
                         </p>
@@ -18,7 +18,7 @@ export default function Footer() {
                                     40-42 Hatton Garden,<br />London, EC1N 8EB
                                 </li>
                                 <li className="pt-2">
-                                    <a href="mailto:enquiries@lumierjewellery.co.uk" className="hover:text-lum-gold transition-colors block">enquiries@lumierjewellery.co.uk</a>
+                                    <a href="mailto:info@iq2gold.co.uk" className="hover:text-lum-gold transition-colors block">info@iq2gold.co.uk</a>
                                 </li>
                             </ul>
                         </div>
@@ -41,7 +41,7 @@ export default function Footer() {
 
                 <div className="mt-16 pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="font-body text-xs text-lum-muted">
-                        © {new Date().getFullYear()} Lumière Jewellery. All rights reserved.
+                        © {new Date().getFullYear()} IQ2 GOLD LTD.
                     </p>
                 </div>
             </div>

@@ -50,7 +50,7 @@ export default function Hero() {
                         transition={{ delay: 0.2, duration: 0.8 }}
                         className="font-body text-lg md:text-xl text-white/90 tracking-wide max-w-lg mx-auto leading-relaxed"
                     >
-                        Timeless elegance for the modern soul. Wear your story with Lumière.
+                        Timeless elegance for the modern soul. Wear your story with IQ2 GOLD LTD.
                     </motion.p>
                 </div>
 

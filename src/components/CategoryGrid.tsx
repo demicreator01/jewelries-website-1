@@ -7,8 +7,8 @@ const categories = [
     { name: 'Necklaces', image: '/images/gold_layered_chain.png' },
     { name: 'Bracelets', image: '/images/diamond_tennis_bracelet.png' },
     { name: 'Earrings', image: '/images/category_earrings.png' },
-    { name: 'Watches', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80' },
-    { name: 'Accessories', image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80' },
+    { name: 'Watches', image: '/images/category_watches.jpg' },
+    { name: 'Accessories', image: '/images/category_accesories.webp' },
 ];
 
 export default function CategoryGrid() {

@@ -68,7 +68,7 @@ export default function Navbar() {
                         isOpen ? "text-lum-text text-white" : scrolled ? "text-lum-text" : "text-white"
                     )}
                 >
-                    Lumière
+                    IQ2 GOLD
                 </a>
 
                 {/* Desktop Nav */}

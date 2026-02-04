@@ -46,17 +46,17 @@ export default function ContactSection() {
                                 <p className="font-body text-sm text-lum-muted">We are available Mon - Sat, 10am - 6pm</p>
                             </div>
 
-                            <a href="https://wa.me/440000000000" className="flex items-center justify-center gap-3 w-full bg-[#25c554] text-white py-4 rounded-lg font-heading tracking-widest uppercase hover:opacity-90 transition-all text-sm shadow-md shadow-green-100 hover:shadow-lg">
+                            <a href="https://wa.me/447418604634" className="flex items-center justify-center gap-3 w-full bg-[#25c554] text-white py-4 rounded-lg font-heading tracking-widest uppercase hover:opacity-90 transition-all text-sm shadow-md shadow-green-100 hover:shadow-lg">
                                 <MessageCircle size={20} />
                                 WhatsApp Us
                             </a>
 
-                            <a href="tel:+440000000000" className="flex items-center justify-center gap-3 w-full border border-lum-gold/30 text-lum-text py-4 rounded-lg font-heading tracking-widest uppercase hover:border-lum-gold hover:bg-lum-gold hover:text-white transition-all text-sm">
+                            <a href="tel:+442080404675" className="flex items-center justify-center gap-3 w-full border border-lum-gold/30 text-lum-text py-4 rounded-lg font-heading tracking-widest uppercase hover:border-lum-gold hover:bg-lum-gold hover:text-white transition-all text-sm">
                                 <Phone size={20} />
-                                +44 XXXX XXXXXX
+                                +44 20 8040 4675
                             </a>
 
-                            <a href="mailto:enquiries@lumierjewellery.co.uk" className="flex items-center justify-center gap-3 w-full border border-gray-200 text-lum-muted py-4 rounded-lg font-heading tracking-widest uppercase hover:text-lum-text hover:border-lum-text transition-all text-sm">
+                            <a href="mailto:info@iq2gold.co.uk" className="flex items-center justify-center gap-3 w-full border border-gray-200 text-lum-muted py-4 rounded-lg font-heading tracking-widest uppercase hover:text-lum-text hover:border-lum-text transition-all text-sm">
                                 <Mail size={20} />
                                 Email Us
                             </a>
